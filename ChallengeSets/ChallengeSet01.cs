@@ -30,7 +30,7 @@ namespace ChallengeSets
 
         public string GetGreeting(string nameOfPerson)
         {
-            throw new NotImplementedException();
+            return "Greeting nameOfPerson";
         }
 
         public string GetHey()
