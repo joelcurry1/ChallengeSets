@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Collections.Generic;
 namespace ChallengeSets
 {
     public class ChallengeSet01
@@ -20,9 +22,15 @@ namespace ChallengeSets
 
         public int GetSmallestNumber(int number1, int number2)
         {
-            return number1 - number2;
+            if (number1 > number2)
+            {
+                return number2;
+            }
+            else
+            {
+                return number1;
+            }
         }
-
         public long Multiply(long factor1, long factor2)
         {
             return factor1 * factor2;
@@ -30,7 +38,15 @@ namespace ChallengeSets
 
         public string GetGreeting(string nameOfPerson)
         {
-            return "Greeting nameOfPerson";
+            if(nameOfPerson == "")
+            {
+                return "Hello!";
+            }
+            else
+            {
+                string s = "Hello" + ", " + nameOfPerson + "!";
+                return s;
+            }
         }
 
         public string GetHey()
