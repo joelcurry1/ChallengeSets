@@ -70,43 +70,8 @@ namespace ChallengeSets
         public enum TicTacToeResult { X, O, Draw }
         public TicTacToeResult GetTicTacToeWinner(char[,] finalBoard)
         {
-            //0 win check
-            if (finalBoard[0,0] == 'O' && (finalBoard[0,0] == finalBoard[0,1]) && (finalBoard[0,1] == finalBoard[0,2]))
-            {
-                return TicTacToeResult.O;
-            }
-            else if (finalBoard[1, 0] == 'O' && (finalBoard[1, 0] == finalBoard[1, 1]) && (finalBoard[1, 1] == finalBoard[1, 2]))
-            {
-                return TicTacToeResult.O;
-            }
-            else if (finalBoard[2, 0] == 'O' && (finalBoard[2, 0] == finalBoard[2, 1]) && (finalBoard[2, 1] == finalBoard[2, 2]))
-            {
-                return TicTacToeResult.O;
-            }
-            else if (finalBoard[0, 0] == 'O' && (finalBoard[0, 0] == finalBoard[1, 0]) && (finalBoard[1, 0] == finalBoard[2, 0]))
-            {
-                return TicTacToeResult.O;
-            }
-        
-            else if (finalBoard[0, 1] == 'O' && (finalBoard[0, 1] == finalBoard[1, 1]) && (finalBoard[1, 1] == finalBoard[2, 1]))
-            {
-                return TicTacToeResult.O;
-            }
-            else if (finalBoard[0, 2] == 'O' && (finalBoard[0, 2] == finalBoard[1, 2]) && (finalBoard[1, 2] == finalBoard[2, 2]))
-            {
-                return TicTacToeResult.O;
-            }
-            else if (finalBoard[0, 0] == 'O' && (finalBoard[0, 0] == finalBoard[1, 1]) && (finalBoard[1, 1] == finalBoard[2, 2]))
-            {
-                return TicTacToeResult.O;
-            }
-            else if (finalBoard[0, 2] == 'O' && (finalBoard[0, 2] == finalBoard[1, 1]) && (finalBoard[0, 1] == finalBoard[2, 0]))
-            {
-                return TicTacToeResult.O;
-            }
-
             //X win check
-            else if (finalBoard[0, 0] == 'X' && (finalBoard[0, 0] == finalBoard[0, 1]) && (finalBoard[0, 1] == finalBoard[0, 2]))
+            if (finalBoard[0,0] == 'X' && (finalBoard[0,0] == finalBoard[0,1]) && (finalBoard[0,1] == finalBoard[0,2]))
             {
                 return TicTacToeResult.X;
             }
@@ -122,7 +87,7 @@ namespace ChallengeSets
             {
                 return TicTacToeResult.X;
             }
-
+        
             else if (finalBoard[0, 1] == 'X' && (finalBoard[0, 1] == finalBoard[1, 1]) && (finalBoard[1, 1] == finalBoard[2, 1]))
             {
                 return TicTacToeResult.X;
@@ -138,6 +103,41 @@ namespace ChallengeSets
             else if (finalBoard[0, 2] == 'X' && (finalBoard[0, 2] == finalBoard[1, 1]) && (finalBoard[0, 1] == finalBoard[2, 1]))
             {
                 return TicTacToeResult.X;
+            }
+
+            //O win check
+            else if (finalBoard[0, 0] == 'O' && (finalBoard[0, 0] == finalBoard[0, 1]) && (finalBoard[0, 1] == finalBoard[0, 2]))
+            {
+                return TicTacToeResult.O;
+            }
+            else if (finalBoard[1, 0] == 'O' && (finalBoard[1, 0] == finalBoard[1, 1]) && (finalBoard[1, 1] == finalBoard[1, 2]))
+            {
+                return TicTacToeResult.O;
+            }
+            else if (finalBoard[2, 0] == 'O' && (finalBoard[2, 0] == finalBoard[2, 1]) && (finalBoard[2, 1] == finalBoard[2, 2]))
+            {
+                return TicTacToeResult.O;
+            }
+            else if (finalBoard[0, 0] == 'O' && (finalBoard[0, 0] == finalBoard[1, 0]) && (finalBoard[1, 0] == finalBoard[2, 0]))
+            {
+                return TicTacToeResult.O;
+            }
+
+            else if (finalBoard[0, 1] == 'O' && (finalBoard[0, 1] == finalBoard[1, 1]) && (finalBoard[1, 1] == finalBoard[2, 1]))
+            {
+                return TicTacToeResult.O;
+            }
+            else if (finalBoard[0, 2] == 'O' && (finalBoard[0, 2] == finalBoard[1, 2]) && (finalBoard[1, 2] == finalBoard[2, 2]))
+            {
+                return TicTacToeResult.O;
+            }
+            else if (finalBoard[0, 0] == 'O' && (finalBoard[0, 0] == finalBoard[1, 1]) && (finalBoard[1, 1] == finalBoard[2, 2]))
+            {
+                return TicTacToeResult.O;
+            }
+            else if (finalBoard[0, 2] == 'O' && (finalBoard[0, 2] == finalBoard[1, 1]) && (finalBoard[0, 1] == finalBoard[2, 0]))
+            {
+                return TicTacToeResult.O;
             }
             else
             {
