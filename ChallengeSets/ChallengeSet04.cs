@@ -158,7 +158,7 @@ namespace ChallengeSets
 
         public int Factorial(int number)
         {
-            //if (number < 0) throw ArgumentOutOfRangeException;
+            if (number < 0) throw new ArgumentOutOfRangeException();
             if (number == 0) return 1;
             int result = number;
             for (int i = 1; i < number; i++)
